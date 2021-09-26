@@ -2,7 +2,7 @@
 
 using namespace std;
 
-char CreateBoard[][] = {{1,2,3}, {4,5,6}, {7,8,9}};
+char CreateBoard[3][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
 
 int currentplayer;
 char currentmarker;
@@ -56,11 +56,11 @@ int winner(){
     
 }
 void swapturn(){
-    if(currentmarker == "X"){
-        currentmarker = "O";
+    if(currentmarker == 'X'){
+        currentmarker = 'O';
     }
     else{
-        currentmarker = "X";
+        currentmarker = 'X';
     }
     if(currentplayer == 1){
         currentplayer = 2;
